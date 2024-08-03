@@ -29,3 +29,6 @@
 
 9. git branch -D [nome da branch]
 > *Deleta a branch criada*
+
+10. git push
+> *Envia o arquivo para a cloud*
