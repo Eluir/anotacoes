@@ -1,8 +1,8 @@
-## Anotações gerais
+# Anotações gerais
 *Por Eluir Monteiro*
 
 ---
-### **Git e GitHub**   
+#### **Git e GitHub**   
 > **Git** é diferente de **GitHub**   
 > O *Git* é versionamento local.   
 >*GitHub* é para versionamento compartilhado.
@@ -43,7 +43,7 @@
 12. git pull
 > *Atualiza os dados da main após um PR (pull request)*
 ---
-### Python
+## Python
 
 Criação de ambiente virtual 
 
@@ -87,8 +87,9 @@ Setar ele como `False` pode ser bom para os casos que a página toda é um arqui
 * Biblioteca PyPDF2
 from PyPDF2 import PdfReader 
 
-# Abrindo um arquivo PDF existente
-with open('arquivo.pdf', "rb") as input_pdf:
+### Abrindo um arquivo PDF existente
+
+	with open('arquivo.pdf', "rb") as input_pdf:
     # Criando um objeto PdfFileReader
     pdf_reader = PdfReader(input_pdf)
 
@@ -100,3 +101,10 @@ with open('arquivo.pdf', "rb") as input_pdf:
         page = pdf_reader.pages[page_number]
         text = page.extract_text()
         print("Texto da página", page_number + 1, ":", text)
+		
+## Power BI
+
+Sempre que for checar o escopo, começar da menor granularidade.
+
+**Exemplo:**   
+>Caso de datas, começar a chegar da camada Data e depois "subir" para semana, mês...
